@@ -5,23 +5,23 @@ import java.util.HashMap;
 public class CommandResource {
 	
 	private String command;
-	private HashMap<String, String> flagPairs;
+	private HashMap<String, String> flagPairs = new HashMap<>();
 	
-	protected CommandResource() {}
+	public CommandResource() {} // TODO - Change constructors back to protected
 	
-	protected CommandResource (String command) {
+	public CommandResource (String command) {
 		
 		this.command = command;
 		
 	}
 	
-	protected CommandResource (String command, FlagDataPair... pairs) {
+	public CommandResource (String command, FlagDataPair... pairs) {
 		
 		this.command = command;
 		
 		for (FlagDataPair pair: pairs) {
 			
-			flagPairs.put(pair.primary, pair.secondary);
+			flagPairs.put(pair.flag, pair.data);
 			
 		}
 		
@@ -41,10 +41,27 @@ public class CommandResource {
 	
 	public void addFlagPairs(FlagDataPair... pairs) {
 		
-		for (FlagDataPair pair: pairs) {
-			
-			flagPairs.put(pair.primary, pair.secondary);
-			
+		try {
+
+			for (FlagDataPair pair: pairs) {
+
+				if (pair.data != null) {
+
+					flagPairs.put(pair.flag, pair.data);
+
+				} else {
+
+					flagPairs.put(pair.flag, "");
+
+				}
+
+
+			}
+
+		} catch (Exception e) {
+
+			System.out.println("Malformed command.");
+
 		}
 		
 	}
@@ -68,5 +85,27 @@ public class CommandResource {
 		}
 		
 	}
-	
+
+	public void debugOutput() {
+
+		System.out.println("Command:\t" + command);
+
+		int flagNumber = 1;
+
+		for (String flag: flagPairs.keySet()) {
+
+			System.out.println("Flag #" + flagNumber + ":\t" + flag);
+
+			if (flagPairs.get(flag) != "") {
+
+				System.out.println("Data #" + flagNumber + ":\t" + flagPairs.get(flag));
+
+			}
+
+			flagNumber++;
+
+		}
+
+	}
+
 }
