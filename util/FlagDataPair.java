@@ -2,20 +2,22 @@ package com.t99sdevelopment.philesd.util;
 
 public class FlagDataPair {
 	
-	public String primary;
-	public String secondary;
+	public String flag;
+	public String data;
 	
-	public FlagDataPair(String primary, String secondary) {
-		
-		this.primary = primary;
-		this.secondary = secondary;
-		
+	public FlagDataPair() {}
+
+	public FlagDataPair(String flag) {
+
+		this.flag = flag;
+
 	}
-	
-	public FlagDataPair() {
-	
-	
-	
+
+	public FlagDataPair(String flag, String data) {
+
+		this.flag = flag;
+		this.data = data;
+
 	}
 	
 }
