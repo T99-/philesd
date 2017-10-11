@@ -1,13 +1,15 @@
 package com.t99sdevelopment.philesd.cli;
 //Created by T99 at 12:01 AM, October [DAY...], 2017.
 
+import com.t99sdevelopment.philesd.exception.CommandNotFoundException;
+
 import java.util.HashMap;
 
 public class CommandManager {
 
     private static HashMap<String, Command> commands = new HashMap<>();
 
-    protected static void execute(String commandName) {
+    public static void execute(String commandName) throws CommandNotFoundException {
 
         if (commands.containsKey(commandName)) {
 
@@ -15,7 +17,7 @@ public class CommandManager {
 
         } else {
 
-            // send text to relevant output stream notifying user that the command does not exist -- check context first
+            throw new CommandNotFoundException("The given command did not exist.");
 
         }
 
