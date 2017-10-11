@@ -9,4 +9,4 @@ Philesd, the server-side daemon/backend of the Philes webapp, is a Java-based fi
 - [ ] Multiple file organization options - hierarchical folder (normal filesystem) based, tag based, object based, etc.
 - [ ] User based login, logs, access control, commenting, etc.
 - [ ] Highly visually customizable - either choose a theme, or set all of your own colors, fonts, etc. If you're really inclined, you can even use your own custom stylesheets.
-- [ ] Intuitive and visually-pleasent command line interface for both the server administrator _and_ the end-user.
+- [ ] Intuitive and visually-pleasant command line interface for both the server administrator _and_ the end-user.
