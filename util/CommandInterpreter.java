@@ -1,28 +1,8 @@
 package com.t99sdevelopment.philesd.util;
 
-import com.t99sdevelopment.philesd.cli.Command;
-import com.t99sdevelopment.philesd.cli.CommandManager;
-import com.t99sdevelopment.philesd.exception.CommandNotFoundException;
-
 import java.util.ArrayList;
 
 public class CommandInterpreter {
-
-	public static Command process(String input) {
-
-		CommandResource commandResource = interpret(input);
-
-		try {
-
-			CommandManager.execute(commandResource.getCommand());
-
-		} catch (CommandNotFoundException e) {
-
-			System.out.println("Could not find command: `" + commandResource.getCommand() + "`");
-
-		}
-
-	}
 
 	public static CommandResource interpret(String input) {
 		
