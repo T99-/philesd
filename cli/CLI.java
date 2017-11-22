@@ -6,11 +6,9 @@ public final class CLI implements Runnable {
 	
 	Scanner inputStream = new Scanner(System.in);
 
-	private static int context;
-	public static final int BASE_CONTEXT = 0;
-	public static final int CLISTREAM_CONTEXT = 1;
+	private static Context context;
 
-	private static CLIStream baseStream = new CLIStream("base", BASE_CONTEXT);
+	private static CLIStream baseStream = new CLIStream("base", Context.BASE);
 	public static CLIStream focus = baseStream;
 	
 	public static void input() {
@@ -45,13 +43,13 @@ public final class CLI implements Runnable {
 		
 	}
 
-	public static void setContext(int newContext) {
+	public static void setContext(Context newContext) {
 
 		context = newContext;
 
 	}
 
-	public static int getContext() {
+	public static Context getContext() {
 
 		return context;
 

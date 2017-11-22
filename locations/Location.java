@@ -2,6 +2,7 @@ package com.t99sdevelopment.philesd.locations;
 
 import com.t99sdevelopment.philesd.cli.CLI;
 import com.t99sdevelopment.philesd.cli.CLIStream;
+import com.t99sdevelopment.philesd.cli.Context;
 
 import java.io.IOException;
 import java.nio.file.Path;
@@ -26,7 +27,7 @@ public class Location {
 		this.path = path;
 
 		LocationManager.register(name, this);
-		stream = new CLIStream(name, CLI.CLISTREAM_CONTEXT);
+		stream = new CLIStream(name, Context.CLISTREAM);
 		
 		try {
 			

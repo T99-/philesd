@@ -2,10 +2,10 @@ package com.t99sdevelopment.philesd.cli;
 
 public class CLIStream {
 
-    public int context;
+    public Context context;
     public StringBuffer contents = new StringBuffer();
 
-    public CLIStream(String name, int context) {
+    public CLIStream(String name, Context context) {
 
         this.context = context;
         StreamManager.register(name, this);

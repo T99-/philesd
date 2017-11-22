@@ -21,11 +21,11 @@ class ExitCommand extends Command {
 
         switch (CLI.getContext()) {
 
-            case CLI.BASE_CONTEXT:
+            case BASE:
                 System.exit(0);
                 break;
 
-            case CLI.CLISTREAM_CONTEXT:
+            case CLISTREAM:
                 // return to the base context/cli stream
                 break;
 
