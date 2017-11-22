@@ -3,7 +3,7 @@ package com.t99sdevelopment.philesd.util;
 import java.util.ArrayList;
 
 public class CommandInterpreter {
-	
+
 	public static CommandResource interpret(String input) {
 		
 		CommandResource command = new CommandResource();
