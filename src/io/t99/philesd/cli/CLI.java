@@ -1,8 +1,4 @@
-package com.t99sdevelopment.philesd.cli;
-
-import com.t99sdevelopment.philesd.exception.CommandNotFoundException;
-import com.t99sdevelopment.philesd.util.CommandInterpreter;
-import com.t99sdevelopment.philesd.util.CommandResource;
+package io.t99.philesd.cli;
 
 import java.util.Scanner;
 
@@ -19,27 +15,28 @@ public final class CLI implements Runnable {
 
 		while(true) {
 
-			processCommand(inputStream.nextLine());
+			//processCommand(inputStream.nextLine());
 
 		}
 
 	}
-
-	public static void processCommand(String input) {
-
-		CommandResource commandResource = CommandInterpreter.interpret(input);
-
-		try {
-
-			CommandManager.execute(commandResource.getCommand());
-
-		} catch (CommandNotFoundException e) {
-
-			System.out.println("Could not find command: `" + commandResource.getCommand() + "`");
-
-		}
-
-	}
+	
+//  I guess I got rid of a couple of classes somewhere along the way? meh, not my concern rn -- TODO
+//	public static void processCommand(String input) {
+//
+//		CommandResource commandResource = CommandInterpreter.interpret(input);
+//
+//		try {
+//
+//			CommandManager.execute(commandResource.getCommand());
+//
+//		} catch (CommandNotFoundException e) {
+//
+//			System.out.println("Could not find command: `" + commandResource.getCommand() + "`");
+//
+//		}
+//
+//	}
 	
 	public static void clearConsole()	{
 		
