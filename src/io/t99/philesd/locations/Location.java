@@ -1,8 +1,8 @@
-package com.t99sdevelopment.philesd.locations;
+package io.t99.philesd.locations;
 
-import com.t99sdevelopment.philesd.cli.CLI;
-import com.t99sdevelopment.philesd.cli.CLIStream;
-import com.t99sdevelopment.philesd.cli.Context;
+import io.t99.philesd.cli.CLI;
+import io.t99.philesd.cli.CLIStream;
+import io.t99.philesd.cli.Context;
 
 import java.io.IOException;
 import java.nio.file.Path;

@@ -1,4 +1,4 @@
-package com.t99sdevelopment.philesd.cli;
+package io.t99.philesd.cli;
 
 import java.util.HashMap;
 

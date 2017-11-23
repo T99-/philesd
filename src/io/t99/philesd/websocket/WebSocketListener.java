@@ -1,6 +1,6 @@
-package com.t99sdevelopment.philesd.websocket;
+package io.t99.philesd.websocket;
 
-import com.t99sdevelopment.philesd.util.NumberBaseConverter;
+import io.t99.philesd.util.NumberBaseConverter;
 
 import java.io.IOException;
 import java.io.InputStream;
