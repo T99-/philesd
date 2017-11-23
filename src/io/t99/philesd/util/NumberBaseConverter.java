@@ -1,4 +1,4 @@
-package com.t99sdevelopment.philesd.util;
+package io.t99.philesd.util;
 
 public class NumberBaseConverter {
 

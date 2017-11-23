@@ -1,7 +1,7 @@
-package com.t99sdevelopment.philesd.cli;
+package io.t99.philesd.cli;
 //Created by T99 at 12:01 AM, October [DAY...], 2017.
 
-import com.t99sdevelopment.philesd.exception.CommandNotFoundException;
+import io.t99.philesd.exception.CommandNotFoundException;
 
 import java.util.HashMap;
 

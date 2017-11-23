@@ -1,6 +1,6 @@
-package com.t99sdevelopment.philesd.util;
+package io.t99.philesd.util;
 
-import com.t99sdevelopment.philesd.cli.CLIStream;
+import io.t99.philesd.cli.CLIStream;
 
 public class SingleSend {
 	

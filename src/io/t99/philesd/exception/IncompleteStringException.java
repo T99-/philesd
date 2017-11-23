@@ -1,4 +1,4 @@
-package com.t99sdevelopment.philesd.exception;
+package io.t99.philesd.exception;
 //Created by T99 at 9:10 PM, October [DAY...], 2017.
 
 public class IncompleteStringException extends Exception {

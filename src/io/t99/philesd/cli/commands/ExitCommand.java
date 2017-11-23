@@ -1,8 +1,8 @@
-package com.t99sdevelopment.philesd.cli.commands;
+package io.t99.philesd.cli.commands;
 
-import com.t99sdevelopment.philesd.cli.CLI;
-import com.t99sdevelopment.philesd.cli.Command;
-import com.t99sdevelopment.philesd.cli.CommandManager;
+import io.t99.philesd.cli.CLI;
+import io.t99.philesd.cli.Command;
+import io.t99.philesd.cli.CommandManager;
 
 class ExitCommand extends Command {
 

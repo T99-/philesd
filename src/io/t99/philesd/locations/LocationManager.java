@@ -1,4 +1,4 @@
-package com.t99sdevelopment.philesd.locations;
+package io.t99.philesd.locations;
 
 import java.util.HashMap;
 
