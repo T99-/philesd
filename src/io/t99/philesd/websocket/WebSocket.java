@@ -1,4 +1,4 @@
-package io.t99.philesd.websocket;
+package com.t99sdevelopment.philesd.websocket;
 
 import javax.xml.bind.DatatypeConverter;
 import java.io.*;

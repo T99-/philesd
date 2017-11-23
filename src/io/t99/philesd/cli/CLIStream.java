@@ -1,4 +1,4 @@
-package io.t99.philesd.cli;
+package com.t99sdevelopment.philesd.cli;
 
 public class CLIStream {
 

@@ -1,7 +1,7 @@
-package io.t99.philesd;
+package com.t99sdevelopment.philesd;
 
-import io.t99.philesd.util.NumberBaseConverter;
-import io.t99.philesd.websocket.WebSocket;
+import com.t99sdevelopment.philesd.util.NumberBaseConverter;
+import com.t99sdevelopment.philesd.websocket.WebSocket;
 
 public class Philesd {
 	
@@ -24,6 +24,7 @@ public class Philesd {
 			System.out.println(i + "\t" + NumberBaseConverter.decToBin(i));
 			
 		}
+		
 		
 	}
 	

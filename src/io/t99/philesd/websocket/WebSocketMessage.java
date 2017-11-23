@@ -1,7 +1,7 @@
-package io.t99.philesd.websocket;
+package com.t99sdevelopment.philesd.websocket;
 
-import io.t99.philesd.util.Binary;
-import io.t99.philesd.util.NumberBaseConverter;
+import com.t99sdevelopment.philesd.util.Binary;
+import com.t99sdevelopment.philesd.util.NumberBaseConverter;
 
 public class WebSocketMessage {
 	

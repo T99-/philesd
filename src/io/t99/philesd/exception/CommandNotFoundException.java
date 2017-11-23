@@ -1,4 +1,4 @@
-package io.t99.philesd.exception;
+package com.t99sdevelopment.philesd.exception;
 //Created by T99 at 10:19 PM, October [DAY...], 2017.
 
 public class CommandNotFoundException extends Exception {

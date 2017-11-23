@@ -1,40 +1,40 @@
-package io.t99.philesd.util;
+package com.t99sdevelopment.philesd.util;
 
-import io.t99.philesd.exception.IncompleteStringException;
+import com.t99sdevelopment.philesd.exception.IncompleteStringException;
 
 import java.util.ArrayList;
 
 public class StringExtractor {
 
-//	public static String[] getStringAsWordArray(String input) {
-//
-//		ArrayList<String> array = new ArrayList<>();
-//
-//		while (!input.equals("")) {
-//
-//			String[] results;
-//
-//			try {
-//
-//				results = processNextString(input);
-//
-//			} catch (IncompleteStringException e) {
-//
-//				// you should really be catching this further down stream
-//
-//			}
-//
-//			if (results != null) {
-//
-//
-//
-//			}
-//
-//			// input = TODO
-//
-//		}
-//
-//	}
+	public static String[] getStringAsWordArray(String input) {
+
+		ArrayList<String> array = new ArrayList<>();
+
+		while (!input.equals("")) {
+
+			String[] results;
+
+			try {
+
+				results = processNextString(input);
+
+			} catch (IncompleteStringException e) {
+
+				// you should really be catching this further down stream
+
+			}
+
+			if (results != null) {
+
+
+
+			}
+
+			input =
+
+		}
+
+	}
 
 	public static String[] processNextString(String input) throws IncompleteStringException {
 

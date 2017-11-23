@@ -1,4 +1,4 @@
-package io.t99.philesd.util;
+package com.t99sdevelopment.philesd.util;
 
 import java.lang.reflect.MalformedParametersException;
 import java.util.ArrayList;

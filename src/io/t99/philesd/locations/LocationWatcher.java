@@ -1,7 +1,7 @@
-package io.t99.philesd.locations;
+package com.t99sdevelopment.philesd.locations;
 
-import io.t99.philesd.cli.CLIStream;
-import io.t99.philesd.util.SingleSend;
+import com.t99sdevelopment.philesd.cli.CLIStream;
+import com.t99sdevelopment.philesd.util.SingleSend;
 
 import java.io.IOException;
 import java.nio.file.*;
